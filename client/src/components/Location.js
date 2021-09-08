@@ -1,0 +1,29 @@
+import React from 'react';
+import styled from '@emotion/styled';
+
+export default function Location(props) {
+	const Container = styled.div`
+		text-align: center;
+		font-family: helvetica, arial, sans-serif;
+	`;
+
+	const City = styled.h1`
+		font-size: 1.8em;
+		margin-bottom: -15%;
+		font-family: helvetica, arial, sans-serif;
+	`;
+
+	const Country = styled.h5`
+		font-size: 1.2em;
+		font-family: helvetica, arial, sans-serif;
+		margin-bottom: 5%;
+	`;
+	return (
+		<div>
+			<Container>
+				<City>City</City>
+				<Country>CT</Country>
+			</Container>
+		</div>
+	);
+}
