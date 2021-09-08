@@ -25,18 +25,6 @@ export default function Weather() {
 		setLoading(true);
 	};
 
-	// const getWeather = () => {
-	// 	fetch(
-	// 		`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=5fdfb8a76dc35568f5b391b0a4be08a3&units=metric`
-	// 	)
-	// 		.then((response) => response.json())
-	// 		.then((data) => {
-	// 			setWeather(data);
-	// 		});
-
-	// 	console.log(weather);
-	// };
-
 	const getWeather = async () => {
 		try {
 			setLoading(true);
@@ -91,10 +79,11 @@ export default function Weather() {
 										<h2 className='city'>{weather ? weather.name : null}</h2>
 										<h5 className='country'>{weather ? weather.sys.country : null}</h5>
 									</div>
+									<img className='icon' src='../images/sunny.svg' />
+									<h5 className='description'>{weather ? weather.weather[0].main : null}</h5>
 
 									<h1 className='temp'>{weather ? `${weather.main.temp}°` : null}</h1>
-									<img className='icon' src='' />
-									<h5 className='description'>{weather ? weather.weather[0].main : null}</h5>
+
 									<h5 className='humidity'>{weather ? `Humidity:${weather.main.humidity}%` : null}</h5>
 									<h5 className='time'>{weather ? `time:${time}` : null}</h5>
 									{/* <h5 className=' time'>{weather ? myTime.toLocaleTimeString() : null}</h5> */}

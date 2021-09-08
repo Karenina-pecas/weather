@@ -78,7 +78,6 @@ body #wrap {
 	margin-top: 25px;
 	display: flex;
 	flex-direction: column;
-	/* justify-content: space-around; */
 }
 
 .box {
@@ -129,21 +128,35 @@ body #wrap {
 	font-family: helvetica, arial, sans-serif;
 }
 .country {
-	font-size: 1.1em;
+	font-size: 1.2em;
 	font-family: helvetica, arial, sans-serif;
+}
+
+.icon {
+	width: 25%;
+	margin-bottom: -10%;
 }
 
 .temp {
 	font-family: helvetica, arial, sans-serif;
 	font-size: 2em;
+	margin-top: -10%;
 }
 
 .description {
 	font-family: helvetica, arial, sans-serif;
-	font-size: 2em;
+	font-size: 1.4em;
+	margin-bottom: 13%;
 }
 
 .humidity {
 	font-family: helvetica, arial, sans-serif;
 	font-size: 1.2em;
+	margin-bottom: -6%;
+	opacity: 70%;
+}
+
+.time {
+	opacity: 70%;
+	font-size: 1em;
 }
