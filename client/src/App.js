@@ -1,12 +1,10 @@
 import './index.css';
-// import Weather from './components/Weather';
 import WeatherCard from './components/WeatherCard';
 
 function App() {
 	return (
 		<div className='App'>
-			{/* <Weather /> */}
-			<WeatherCard />
+			<WeatherCard temp='30' />
 		</div>
 	);
 }

@@ -5,6 +5,9 @@ import Condition from './Condition';
 import Icon from './Icon';
 
 export default function Card(props) {
+	let highColor = (1 - (props.temp - 12) / 28) * 255;
+	let lowColor = highColor - 150;
+
 	const Wrap = styled.div`
 		height: 100%;
 		display: flex;
@@ -16,7 +19,13 @@ export default function Card(props) {
 	const Card = styled.div`
 		width: 250px;
 		height: 400px;
-		background: linear-gradient(10deg, rgb(152, 221, 142), rgb(228, 172, 68), rgb(81, 216, 216));
+		/*152,228, 81 // 221, 172,216// 142,68,216  */
+		background: linear-gradient(
+			10deg,
+			rgb(255, ${highColor}, 100),
+			rgb(255, 172, 68),
+			rgb(255, ${lowColor}, 0)
+		);
 		opacity: 80%;
 		align-items: center;
 		position: relative;
