@@ -4,7 +4,7 @@ import WeatherCard from './components/WeatherCard';
 function App() {
 	return (
 		<div className='App'>
-			<WeatherCard temp={20} />
+			<WeatherCard city='Tampico' country='MX' temp={-10} condition='Clouds' humidity='30%' time='4.20' />
 		</div>
 	);
 }

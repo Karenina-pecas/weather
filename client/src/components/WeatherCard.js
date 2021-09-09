@@ -4,28 +4,28 @@ import Location from './Location';
 import Condition from './Condition';
 import Icon from './Icon';
 
-export default function Card(props) {
+export default function Card({ temp, condition, city, country, humidity, time }) {
 	let highColor = 0;
 	let lowColor = 0;
 	let bg = null;
-	if (props.temp > 12) {
+	if (temp > 12) {
 		//This is for hot color
-		highColor = (1 - (props.temp - 12) / 28) * 255;
+		highColor = (1 - (temp - 12) / 28) * 255;
 		lowColor = highColor - 150;
 		bg = `linear-gradient(
 			10deg,
 			rgb(255, ${highColor}, 100),
 			rgb(255, 172, 68),
 			rgb(255, ${lowColor}, 0))`;
-	} else if (props.temp <= 12) {
+	} else if (+temp <= 12) {
 		//This is for cold color
-		highColor = (1 - (props.temp - 12) / 28) * 255;
+		highColor = (1 - (temp - 12) / 28) * 255;
 		lowColor = highColor - 150;
 		bg = `linear-gradient(
 			10deg,
-			rgb(255, ${highColor}, 100),
-			rgb(255, 172, 68),
-			rgb(255, ${lowColor}, 0))
+			rgb(0, ${highColor}, 255),
+			rgb(126, 242, 252),
+			rgb(88, ${lowColor}, 188))
 		`;
 	}
 
@@ -75,9 +75,9 @@ export default function Card(props) {
 						<div id='media-viewer'>
 							<div className='square-background'>
 								<Card>
-									<Location />
-									<Icon />
-									<Condition />
+									<Location city={city} country={country} />
+									<Icon condition={condition} />
+									<Condition temp={temp} condition={condition} humidity={humidity} time={time} />
 								</Card>
 							</div>
 						</div>

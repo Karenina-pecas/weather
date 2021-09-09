@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-export default function Condition(props) {
+export default function Condition({ temp, condition, humidity, time }) {
 	const Description = styled.h5`
 		font-family: helvetica, arial, sans-serif;
 		font-size: 1.4em;
@@ -25,10 +25,10 @@ export default function Condition(props) {
 	`;
 	return (
 		<div>
-			<Description>Description</Description>
-			<Temperature>20°</Temperature>
-			<Humidity>Humidity:</Humidity>
-			<Time>Time</Time>
+			<Description>{condition}</Description>
+			<Temperature>{temp}°</Temperature>
+			<Humidity>Humidity: {humidity}</Humidity>
+			<Time>{time}</Time>
 		</div>
 	);
 }
