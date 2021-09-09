@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-export default function Location(props) {
+export default function Location({ city, country }) {
 	const Container = styled.div`
 		text-align: center;
 		font-family: helvetica, arial, sans-serif;
@@ -21,8 +21,8 @@ export default function Location(props) {
 	return (
 		<div>
 			<Container>
-				<City>City</City>
-				<Country>CT</Country>
+				<City>{city}</City>
+				<Country>{country}</Country>
 			</Container>
 		</div>
 	);
