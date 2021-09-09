@@ -77,12 +77,12 @@ body #wrap {
 	justify-self: end;
 }
 
-#city-label {
+/* #city-label {
 	margin-left: 40px;
 	margin-bottom: 3%;
 	grid-column: 2;
 	grid-row: 2;
-}
+} */
 
 .city-input {
 	align-self: center;
