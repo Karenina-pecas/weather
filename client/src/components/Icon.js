@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-export default function Icon(props) {
+export default function Icon({ condition }) {
 	const Icon = styled.img`
 		width: 80px;
 		margin-bottom: -10%;
 	`;
 
 	let icon = '';
-	switch (props.condition) {
+	switch (condition) {
 		case 'Clear':
 			icon = `../images/sunny.svg`;
 			break;

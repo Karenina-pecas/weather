@@ -40,7 +40,7 @@ export default function Card({ temp, condition, city, country, humidity, time })
 	const Card = styled.div`
 		width: 250px;
 		height: 400px;
-		/*152,228, 81 // 221, 172,216// 142,68,216  */
+
 		background: ${bg};
 		opacity: 80%;
 		align-items: center;
@@ -51,26 +51,11 @@ export default function Card({ temp, condition, city, country, humidity, time })
 		display: flex;
 		flex-direction: column;
 	`;
+
 	return (
 		<div>
 			<body>
 				<Wrap>
-					<header className='full-screen-header'>
-						<div className='box'>
-							<div className='logo-p'>
-								<img className='logo' src='logo.png' alt='logo' />
-							</div>
-							<h1>Weather</h1>
-							<form>
-								<div id='city-label'>
-									<label for='city'>City</label>
-								</div>
-								<div className='city-input'>
-									<input type='text' id='city-input' name='city'></input>
-								</div>
-							</form>
-						</div>
-					</header>
 					<main className='full-screen-main zoomed'>
 						<div id='media-viewer'>
 							<div className='square-background'>
