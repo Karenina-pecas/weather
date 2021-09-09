@@ -5,8 +5,29 @@ import Condition from './Condition';
 import Icon from './Icon';
 
 export default function Card(props) {
-	let highColor = (1 - (props.temp - 12) / 28) * 255;
-	let lowColor = highColor - 150;
+	let highColor = 0;
+	let lowColor = 0;
+	let bg = null;
+	if (props.temp > 12) {
+		//This is for hot color
+		highColor = (1 - (props.temp - 12) / 28) * 255;
+		lowColor = highColor - 150;
+		bg = `linear-gradient(
+			10deg,
+			rgb(255, ${highColor}, 100),
+			rgb(255, 172, 68),
+			rgb(255, ${lowColor}, 0))`;
+	} else if (props.temp <= 12) {
+		//This is for cold color
+		highColor = (1 - (props.temp - 12) / 28) * 255;
+		lowColor = highColor - 150;
+		bg = `linear-gradient(
+			10deg,
+			rgb(255, ${highColor}, 100),
+			rgb(255, 172, 68),
+			rgb(255, ${lowColor}, 0))
+		`;
+	}
 
 	const Wrap = styled.div`
 		height: 100%;
@@ -20,12 +41,7 @@ export default function Card(props) {
 		width: 250px;
 		height: 400px;
 		/*152,228, 81 // 221, 172,216// 142,68,216  */
-		background: linear-gradient(
-			10deg,
-			rgb(255, ${highColor}, 100),
-			rgb(255, 172, 68),
-			rgb(255, ${lowColor}, 0)
-		);
+		background: ${bg};
 		opacity: 80%;
 		align-items: center;
 		position: relative;
