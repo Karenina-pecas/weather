@@ -33,7 +33,6 @@ body #wrap {
 }
 .full-screen-main.zoomed {
 	width: 85%;
-	overflow-x: scroll;
 	padding-right: 0;
 }
 
@@ -77,13 +76,6 @@ body #wrap {
 	justify-self: end;
 }
 
-/* #city-label {
-	margin-left: 40px;
-	margin-bottom: 3%;
-	grid-column: 2;
-	grid-row: 2;
-} */
-
 .city-input {
 	align-self: center;
 	margin-left: 1%;
@@ -93,49 +85,5 @@ body #wrap {
 .city-input #city-input {
 	border-radius: 10px;
 	width: 120px;
+	outline: none;
 }
-
-/* .location {
-	text-align: center;
-	font-family: helvetica, arial, sans-serif;
-} */
-
-/* .city {
-	font-size: 1.8em;
-	margin-bottom: -15%;
-	font-family: helvetica, arial, sans-serif;
-} */
-/* .country {
-	font-size: 1.2em;
-	font-family: helvetica, arial, sans-serif;
-	margin-bottom: 5%;
-} */
-
-/* .icon {
-	width: 30%;
-	margin-bottom: -10%;
-} */
-
-/* .temp {
-	font-family: helvetica, arial, sans-serif;
-	font-size: 2em;
-	margin-top: -10%;
-} */
-
-/* .description {
-	font-family: helvetica, arial, sans-serif;
-	font-size: 1.4em;
-	margin-bottom: 13%;
-} */
-
-/* .humidity {
-	font-family: helvetica, arial, sans-serif;
-	font-size: 1.2em;
-	margin-bottom: -6%;
-	opacity: 70%;
-} */
-
-/* .time {
-	opacity: 70%;
-	font-size: 1em;
-} */
