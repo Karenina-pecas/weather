@@ -8,18 +8,31 @@ function App() {
 		font-family: helvetica, arial, sans-serif;
 	`;
 	const Location = styled.div`
-		margin-left: 40px;
+		margin-left: 48px;
 		margin-bottom: 3%;
 		grid-column: 2;
 		grid-row: 2;
 		font-family: helvetica, arial, sans-serif;
 	`;
+	const Err = styled.span`
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		font-style: italic;
+		font-size: 0.6em;
+		text-align: center;
+		margin-left: 35px;
+	`;
 
-	const [city, setCity] = useState('');
-	const [weather, setWeather] = useState(null);
+	const [city, setCity] = useState('Tampico');
+	const [cityName, setCityName] = useState('');
+	const [country, setCountry] = useState('');
+	const [condition, setCondition] = useState('');
+	const [temp, setTemp] = useState(0);
+	const [humidity, setHumidiy] = useState('');
 	const [error, setError] = useState('');
-	const [loading, setLoading] = useState(false);
 
+	useEffect(() => {
+		getWeather();
+	}, []);
 	const handleChange = (e) => {
 		const value = e.target.value;
 		setCity(value);
@@ -28,28 +41,32 @@ function App() {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		getWeather();
-		setLoading(true);
 	};
 
 	const getWeather = async () => {
 		try {
-			setLoading(true);
+			setError('');
 			const response = await fetch(
-				`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=5fdfb8a76dc35568f5b391b0a4be08a3&units=metric`
+				`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=2c045c1dbbb951593e7270196784c765&units=metric`
 			);
 
 			const data = await response.json();
 			if (!response.ok) throw data;
 
-			setWeather(data);
-			console.log(data);
-			// setTime(data.timezone);
+			setCityName(data.name);
+			setCountry(data.sys.country);
+			setTemp(data.main.temp);
+			setCondition(data.weather[0].main);
+			setHumidiy(data.main.humidity);
 		} catch (error) {
 			setError(error.message);
-		} finally {
-			setLoading(false);
 		}
 	};
+
+	const temperature = () => {
+		return Math.trunc(temp);
+	};
+
 	return (
 		<div className='App'>
 			<header className='full-screen-header'>
@@ -70,10 +87,19 @@ function App() {
 								id='city-input'
 								name='city'></input>
 						</div>
+
+						{error && <Err>{error}</Err>}
 					</form>
 				</div>
 			</header>
-			<WeatherCard city='' country='MX' temp={-10} condition='Clouds' humidity='30%' time='4.20' />
+
+			<WeatherCard
+				city={cityName}
+				country={country}
+				temp={temperature()}
+				condition={condition}
+				humidity={humidity}
+			/>
 		</div>
 	);
 }
