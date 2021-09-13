@@ -3,13 +3,14 @@ import styled from '@emotion/styled';
 
 export default function Location({ city, country }) {
 	const Container = styled.div`
+		display: flex-flexbox;
 		text-align: center;
 		font-family: helvetica, arial, sans-serif;
 	`;
 
 	const City = styled.h1`
-		font-size: 1.8em;
-		margin-bottom: -15%;
+		/* font-size: auto; */
+		/* margin-bottom: -15%; */
 		font-family: helvetica, arial, sans-serif;
 	`;
 

@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 export default function Icon({ condition }) {
 	const Icon = styled.img`
 		width: 80px;
-		margin-bottom: -10%;
+		margin-bottom: -16px;
 	`;
 
 	let icon = '';
@@ -32,6 +32,9 @@ export default function Icon({ condition }) {
 			break;
 		case 'Fog':
 			icon = `../images/fog.svg`;
+			break;
+		case 'Default':
+			icon = `../images/stars.svg`;
 			break;
 	}
 	return (
