@@ -13,7 +13,8 @@ export default function Icon({ condition }) {
 			icon = `../images/sunny.svg`;
 			break;
 		case 'Clouds':
-			icon = `../images/clouds.svg`;
+			icon = `https://kareninatech.me/weather/images/clouds.svg`;
+			//icon = `../images/clouds.svg`;
 			break;
 		case 'Rain':
 			icon = `../images/rainy.svg`;

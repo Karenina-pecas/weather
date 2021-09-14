@@ -1,7 +1,10 @@
 import './index.css';
 import WeatherCard from './components/WeatherCard';
+
 import styled from '@emotion/styled';
 import React, { useState, useEffect } from 'react';
+require('dotenv').config();
+const apiKey = process.env.WEATHER_API_KEY;
 
 function App() {
 	const Weather = styled.h1`
@@ -72,7 +75,7 @@ function App() {
 			<header className='full-screen-header'>
 				<div className='box'>
 					<div className='logo-p'>
-						<img className='logo' src='logo.png' alt='logo' />
+						<img className='logo' src='/logo.png' alt='logo' />
 					</div>
 					<Weather>Weather</Weather>
 					<form onSubmit={(e) => handleSubmit(e)}>
