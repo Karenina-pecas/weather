@@ -13,8 +13,7 @@ export default function Icon({ condition }) {
 			icon = `../images/sunny.svg`;
 			break;
 		case 'Clouds':
-			icon = `/clouds.svg`;
-			//icon = `../images/clouds.svg`;
+			icon = `../images/clouds.svg`;
 			break;
 		case 'Rain':
 			icon = `../images/rainy.svg`;
@@ -40,7 +39,7 @@ export default function Icon({ condition }) {
 	}
 	return (
 		<div>
-			<Icon className='icon' src={icon} alt='Weather Icon' />
+			<Icon className='icon' src={process.env.PUBLIC_URL + `/images/${icon}`} alt='Weather Icon' />
 		</div>
 	);
 }
