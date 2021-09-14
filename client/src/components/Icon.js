@@ -10,10 +10,10 @@ export default function Icon({ condition }) {
 	let icon = '';
 	switch (condition) {
 		case 'Clear':
-			icon = `images/sunny.svg`;
+			icon = `/sunny.svg`;
 			break;
 		case 'Clouds':
-			icon = `images/clouds.svg`;
+			icon = `/clouds.svg`;
 			break;
 		case 'Rain':
 			icon = `images/rainy.svg`;
