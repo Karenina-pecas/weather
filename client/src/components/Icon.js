@@ -10,31 +10,31 @@ export default function Icon({ condition }) {
 	let icon = '';
 	switch (condition) {
 		case 'Clear':
-			icon = `/sunny.svg`;
+			icon = `weather/images/sunny.svg`;
 			break;
 		case 'Clouds':
-			icon = `/clouds.svg`;
+			icon = `weather/images/clouds.svg`;
 			break;
 		case 'Rain':
-			icon = `images/rainy.svg`;
+			icon = `weather/images/rainy.svg`;
 			break;
 		case 'Snow':
-			icon = `images/snowing.svg`;
+			icon = `weather/images/snowing.svg`;
 			break;
 		case 'Thunderstorm':
-			icon = `images/cloud-lightning.svg`;
+			icon = `weather/images/cloud-lightning.svg`;
 			break;
 		case 'Drizzle':
-			icon = `git aimages/drizzle.svg`;
+			icon = `weather/images/drizzle.svg`;
 			break;
 		case 'Tornado':
-			icon = `images/tornado.svg`;
+			icon = `weather/images/tornado.svg`;
 			break;
 		case 'Fog':
-			icon = `images/fog.svg`;
+			icon = `weather/images/fog.svg`;
 			break;
 		case 'Default':
-			icon = `images/stars.svg`;
+			icon = `weather/images/stars.svg`;
 			break;
 	}
 	return (
