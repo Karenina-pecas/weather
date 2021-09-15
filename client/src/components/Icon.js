@@ -39,7 +39,7 @@ export default function Icon({ condition }) {
 	}
 	return (
 		<div>
-			<Icon className='icon' src={process.env.PUBLIC_URL + `/weather/images/${icon}`} alt='Weather Icon' />
+			<Icon className='icon' src={process.env.PUBLIC_URL + `/images/${icon}`} alt='Weather Icon' />
 		</div>
 	);
 }
