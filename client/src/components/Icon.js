@@ -25,7 +25,7 @@ export default function Icon({ condition }) {
 			icon = `images/cloud-lightning.svg`;
 			break;
 		case 'Drizzle':
-			icon = `images/drizzle.svg`;
+			icon = `git aimages/drizzle.svg`;
 			break;
 		case 'Tornado':
 			icon = `images/tornado.svg`;
