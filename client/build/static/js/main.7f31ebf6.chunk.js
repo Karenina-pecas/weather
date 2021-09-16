@@ -90,31 +90,31 @@
 					a = '';
 				switch (e) {
 					case 'Clear':
-						a = '/weather/images/sunny.svg';
+						a = '../images/sunny.svg';
 						break;
 					case 'Clouds':
-						a = '/weather/images/clouds.svg';
+						a = '../images/clouds.svg';
 						break;
 					case 'Rain':
-						a = '/weather/images/rainy.svg';
+						a = '../images/rainy.svg';
 						break;
 					case 'Snow':
-						a = '/weather/images/snowing.svg';
+						a = '../images/snowing.svg';
 						break;
 					case 'Thunderstorm':
-						a = '/weather/images/cloud-lightning.svg';
+						a = '../images/cloud-lightning.svg';
 						break;
 					case 'Drizzle':
-						a = '/weather/images/drizzle.svg';
+						a = '../images/drizzle.svg';
 						break;
 					case 'Tornado':
-						a = '/weather/images/tornado.svg';
+						a = '../images/tornado.svg';
 						break;
 					case 'Fog':
-						a = '/weather/images/fog.svg';
+						a = '../images/fog.svg';
 						break;
 					case 'Default':
-						a = '/weather/images/stars.svg';
+						a = '../images/stars.svg';
 				}
 				return Object(z.jsx)('div', {
 					children: Object(z.jsx)(n, { className: 'icon', src: a, alt: 'Weather Icon' })
