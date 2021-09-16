@@ -39,7 +39,7 @@ export default function Icon({ condition }) {
 	}
 	return (
 		<div>
-			<Icon className='icon' src={`https://kareninatech.me/weather/images/${icon}`} alt='Weather Icon' />
+			<Icon className='icon' src='https://kareninatech.me/weather/images/clouds.svg' alt='Weather Icon' />
 		</div>
 	);
 }
