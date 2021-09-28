@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "https://kareninatech.me/weather/static/css/main.f9986f68.chunk.css",
-    "main.js": "https://kareninatech.me/weather/static/js/main.0fc8ddcf.chunk.js",
-    "main.js.map": "https://kareninatech.me/weather/static/js/main.0fc8ddcf.chunk.js.map",
+    "main.js": "https://kareninatech.me/weather/static/js/main.bae69c07.chunk.js",
+    "main.js.map": "https://kareninatech.me/weather/static/js/main.bae69c07.chunk.js.map",
     "runtime-main.js": "https://kareninatech.me/weather/static/js/runtime-main.67594f04.js",
     "runtime-main.js.map": "https://kareninatech.me/weather/static/js/runtime-main.67594f04.js.map",
     "static/js/2.7eca8d9b.chunk.js": "https://kareninatech.me/weather/static/js/2.7eca8d9b.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.67594f04.js",
     "static/js/2.7eca8d9b.chunk.js",
     "static/css/main.f9986f68.chunk.css",
-    "static/js/main.0fc8ddcf.chunk.js"
+    "static/js/main.bae69c07.chunk.js"
   ]
 }
