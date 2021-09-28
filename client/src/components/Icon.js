@@ -1,5 +1,14 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import sunny from '../images/sunny.svg';
+import clouds from '../images/clouds.svg';
+import rainy from '../images/rainy.svg';
+import snowing from '../images/snowing.svg';
+// import cloudlightning from '../images/cloud-lightning.svg';
+import drizzle from '../images/drizzle.svg';
+import tornado from '../images/tornado.svg';
+import fog from '../images/fog.svg';
+import stars from '../images/stars.svg';
 
 export default function Icon({ condition }) {
 	const Icon = styled.img`
@@ -10,36 +19,36 @@ export default function Icon({ condition }) {
 	let icon = '';
 	switch (condition) {
 		case 'Clear':
-			icon = `sunny.svg`;
+			icon = sunny;
 			break;
 		case 'Clouds':
-			icon = `clouds.svg`;
+			icon = clouds;
 			break;
 		case 'Rain':
-			icon = `rainy.svg`;
+			icon = rainy;
 			break;
 		case 'Snow':
-			icon = `snowing.svg`;
+			icon = snowing;
 			break;
-		case 'Thunderstorm':
-			icon = `cloud-lightning.svg`;
-			break;
+		// case 'Thunderstorm':
+		// 	icon = cloudlightning;
+		// 	break;
 		case 'Drizzle':
-			icon = `drizzle.svg`;
+			icon = drizzle;
 			break;
 		case 'Tornado':
-			icon = `tornado.svg`;
+			icon = tornado;
 			break;
 		case 'Fog':
-			icon = `fog.svg`;
+			icon = fog;
 			break;
 		case 'Default':
-			icon = `stars.svg`;
+			icon = stars;
 			break;
 	}
 	return (
 		<div>
-			<Icon className='icon' src={`https://kareninatech.me/weather/images/${icon}`} alt='Weather Icon' />
+			<Icon className='icon' src={icon} alt='Weather Icon' />
 		</div>
 	);
 }

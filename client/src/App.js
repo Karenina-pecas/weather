@@ -1,5 +1,6 @@
 import './index.css';
 import WeatherCard from './components/WeatherCard';
+import logo from '../src/images/logo.png';
 
 import styled from '@emotion/styled';
 import React, { useState, useEffect } from 'react';
@@ -75,7 +76,7 @@ function App() {
 			<header className='full-screen-header'>
 				<div className='box'>
 					<div className='logo-p'>
-						<img className='logo' src='/logo.png' alt='logo' />
+						<img className='logo' src={logo} alt='logo' />
 					</div>
 					<Weather>Weather</Weather>
 					<form onSubmit={(e) => handleSubmit(e)}>
