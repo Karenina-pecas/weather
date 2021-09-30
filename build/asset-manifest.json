@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "https://kareninatech.me/weather/static/css/main.56bfb8ba.chunk.css",
+    "main.js": "https://kareninatech.me/weather/static/js/main.1ddb959f.chunk.js",
+    "main.js.map": "https://kareninatech.me/weather/static/js/main.1ddb959f.chunk.js.map",
+    "runtime-main.js": "https://kareninatech.me/weather/static/js/runtime-main.67594f04.js",
+    "runtime-main.js.map": "https://kareninatech.me/weather/static/js/runtime-main.67594f04.js.map",
+    "static/js/2.b6ca9fb4.chunk.js": "https://kareninatech.me/weather/static/js/2.b6ca9fb4.chunk.js",
+    "static/js/2.b6ca9fb4.chunk.js.map": "https://kareninatech.me/weather/static/js/2.b6ca9fb4.chunk.js.map",
+    "index.html": "https://kareninatech.me/weather/index.html",
+    "static/css/main.56bfb8ba.chunk.css.map": "https://kareninatech.me/weather/static/css/main.56bfb8ba.chunk.css.map",
+    "static/js/2.b6ca9fb4.chunk.js.LICENSE.txt": "https://kareninatech.me/weather/static/js/2.b6ca9fb4.chunk.js.LICENSE.txt",
+    "static/media/clouds.9076f20e.svg": "https://kareninatech.me/weather/static/media/clouds.9076f20e.svg",
+    "static/media/drizzle.e2db6568.svg": "https://kareninatech.me/weather/static/media/drizzle.e2db6568.svg",
+    "static/media/fog.17758b39.svg": "https://kareninatech.me/weather/static/media/fog.17758b39.svg",
+    "static/media/logo.d3b5b0fd.png": "https://kareninatech.me/weather/static/media/logo.d3b5b0fd.png",
+    "static/media/rainy.4bf75f4e.svg": "https://kareninatech.me/weather/static/media/rainy.4bf75f4e.svg",
+    "static/media/snowing.fb9c300b.svg": "https://kareninatech.me/weather/static/media/snowing.fb9c300b.svg",
+    "static/media/stars.340f3413.svg": "https://kareninatech.me/weather/static/media/stars.340f3413.svg",
+    "static/media/sunny.04476866.svg": "https://kareninatech.me/weather/static/media/sunny.04476866.svg",
+    "static/media/thunderstorm.5d6fe18a.svg": "https://kareninatech.me/weather/static/media/thunderstorm.5d6fe18a.svg",
+    "static/media/tornado.d2fef9de.svg": "https://kareninatech.me/weather/static/media/tornado.d2fef9de.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.67594f04.js",
+    "static/js/2.b6ca9fb4.chunk.js",
+    "static/css/main.56bfb8ba.chunk.css",
+    "static/js/main.1ddb959f.chunk.js"
+  ]
+}
