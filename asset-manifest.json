@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "https://kareninatech.me/weather/static/css/main.4fd1b2b4.chunk.css",
+    "main.css": "https://kareninatech.me/weather/static/css/main.56bfb8ba.chunk.css",
     "main.js": "https://kareninatech.me/weather/static/js/main.1ddb959f.chunk.js",
     "main.js.map": "https://kareninatech.me/weather/static/js/main.1ddb959f.chunk.js.map",
     "runtime-main.js": "https://kareninatech.me/weather/static/js/runtime-main.67594f04.js",
@@ -8,7 +8,7 @@
     "static/js/2.b6ca9fb4.chunk.js": "https://kareninatech.me/weather/static/js/2.b6ca9fb4.chunk.js",
     "static/js/2.b6ca9fb4.chunk.js.map": "https://kareninatech.me/weather/static/js/2.b6ca9fb4.chunk.js.map",
     "index.html": "https://kareninatech.me/weather/index.html",
-    "static/css/main.4fd1b2b4.chunk.css.map": "https://kareninatech.me/weather/static/css/main.4fd1b2b4.chunk.css.map",
+    "static/css/main.56bfb8ba.chunk.css.map": "https://kareninatech.me/weather/static/css/main.56bfb8ba.chunk.css.map",
     "static/js/2.b6ca9fb4.chunk.js.LICENSE.txt": "https://kareninatech.me/weather/static/js/2.b6ca9fb4.chunk.js.LICENSE.txt",
     "static/media/clouds.9076f20e.svg": "https://kareninatech.me/weather/static/media/clouds.9076f20e.svg",
     "static/media/drizzle.e2db6568.svg": "https://kareninatech.me/weather/static/media/drizzle.e2db6568.svg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.67594f04.js",
     "static/js/2.b6ca9fb4.chunk.js",
-    "static/css/main.4fd1b2b4.chunk.css",
+    "static/css/main.56bfb8ba.chunk.css",
     "static/js/main.1ddb959f.chunk.js"
   ]
 }
