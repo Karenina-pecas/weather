@@ -9,8 +9,6 @@ export default function Location({ city, country }) {
 	`;
 
 	const City = styled.h1`
-		/* font-size: auto; */
-		/* margin-bottom: -15%; */
 		font-family: helvetica, arial, sans-serif;
 	`;
 

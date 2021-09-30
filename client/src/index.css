@@ -87,3 +87,15 @@ body #wrap {
 	width: 120px;
 	outline: none;
 }
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	height: 30px;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 10%;
+}
+
+.flex span {
+}

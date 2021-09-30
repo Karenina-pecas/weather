@@ -4,7 +4,7 @@ import sunny from '../images/sunny.svg';
 import clouds from '../images/clouds.svg';
 import rainy from '../images/rainy.svg';
 import snowing from '../images/snowing.svg';
-// import cloudlightning from '../images/cloud-lightning.svg';
+import thunderstorm from '../images/thunderstorm.svg';
 import drizzle from '../images/drizzle.svg';
 import tornado from '../images/tornado.svg';
 import fog from '../images/fog.svg';
@@ -30,9 +30,9 @@ export default function Icon({ condition }) {
 		case 'Snow':
 			icon = snowing;
 			break;
-		// case 'Thunderstorm':
-		// 	icon = cloudlightning;
-		// 	break;
+		case 'Thunderstorm':
+			icon = thunderstorm;
+			break;
 		case 'Drizzle':
 			icon = drizzle;
 			break;
@@ -52,4 +52,3 @@ export default function Icon({ condition }) {
 		</div>
 	);
 }
-//test karenina

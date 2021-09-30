@@ -5,7 +5,6 @@ import logo from '../src/images/logo.png';
 import styled from '@emotion/styled';
 import React, { useState, useEffect } from 'react';
 require('dotenv').config();
-const apiKey = process.env.WEATHER_API_KEY;
 
 function App() {
 	const Weather = styled.h1`
@@ -32,6 +31,8 @@ function App() {
 	const [condition, setCondition] = useState('');
 	const [temp, setTemp] = useState(0);
 	const [humidity, setHumidiy] = useState('');
+	const [tempMax, setTempMax] = useState(0);
+	const [tempMin, setTempMin] = useState(0);
 	const [error, setError] = useState('');
 
 	useEffect(() => {
@@ -62,6 +63,9 @@ function App() {
 			setTemp(data.main.temp);
 			setCondition(data.weather[0].main);
 			setHumidiy(data.main.humidity);
+			setTempMax(data.main.temp_max);
+			setTempMin(data.main.temp_min);
+			console.log(tempMax);
 		} catch (error) {
 			setError(error.message);
 		}
@@ -69,6 +73,13 @@ function App() {
 
 	const temperature = () => {
 		return Math.trunc(temp);
+	};
+
+	const temperatureMax = () => {
+		return Math.ceil(tempMax);
+	};
+	const temperatureMin = () => {
+		return Math.floor(tempMin);
 	};
 
 	return (
@@ -103,6 +114,8 @@ function App() {
 				temp={temperature()}
 				condition={condition}
 				humidity={humidity}
+				tempMax={temperatureMax()}
+				tempMin={temperatureMin()}
 			/>
 		</div>
 	);

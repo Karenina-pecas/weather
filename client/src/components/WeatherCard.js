@@ -4,7 +4,7 @@ import Location from './Location';
 import Condition from './Condition';
 import Icon from './Icon';
 
-export default function Card({ temp, condition, city, country, humidity, time }) {
+export default function Card({ temp, condition, city, country, humidity, time, tempMax, tempMin }) {
 	let highColor = 0;
 	let lowColor = 0;
 	let bg = null;
@@ -62,7 +62,14 @@ export default function Card({ temp, condition, city, country, humidity, time })
 								<Card>
 									<Location city={city} country={country} />
 									<Icon condition={condition} />
-									<Condition temp={temp} condition={condition} humidity={humidity} time={time} />
+									<Condition
+										temp={temp}
+										condition={condition}
+										humidity={humidity}
+										time={time}
+										tempMax={tempMax}
+										tempMin={tempMin}
+									/>
 								</Card>
 							</div>
 						</div>
